@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px!important;
   border-radius: 50px;
 }
+.exmyb-form-btn{
+  margin: -10px 0 0 -10px;
+  padding: 10px 40px!important;
+  border-radius: 50px;
+}
 .exmyb-shadow{
   box-shadow: 0 5px 5px rgba(0,0,0,0.15)!important;
 }
@@ -416,7 +421,9 @@ h1, h2, h3, h4, h5, h6 {
  */ 
  background: rgb(2,0,36);
  background: linear-gradient(180deg, rgb(2 0 36 / 87%) 3%, rgb(134 199 43 / 67%) 87%, rgba(130,196,36,1) 100%);
- position: absolute;
+ 
+  /* background: linear-gradient(180deg, rgb(2 0 36 / 87%) 3%, rgb(134 199 43 / 48%) 87%, rgb(130 196 36 / 24%) 100%); */
+  position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
@@ -1425,8 +1432,16 @@ background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, F
     width: 80%;
   }
 }
-
-
+/*--------------------------------------------------------------
+# Vendor Step Form
+--------------------------------------------------------------*/
+.vendor-bg-s2{
+  width: 100%;
+  background-image: url(../img/vendor-bg-two.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 /*--------------------------------------------------------------
 # Timeline Process
 --------------------------------------------------------------*/
