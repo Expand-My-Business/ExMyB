@@ -2101,6 +2101,18 @@ select.form-control {
   background: #f1f1f1;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
 /* ----unused code--- */
 .border-md {
   border-width: 2px;

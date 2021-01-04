@@ -63,6 +63,22 @@
         font-weight: 600;
         font-family: inherit!important;
       }
+      .pp-form-card.s3{
+        max-width: 100%;
+      }
+      .vcs-tbody input.form-control{
+        padding: .375rem .75rem!important;
+      }
+      .vcs-tbody.table td, .table th {
+        vertical-align: middle;
+      }
+      .vcs-tbody thead{
+        background-color: #dee2e6;
+      }
+      .select2-container {
+        width: 100%!important;
+      }
+
   </style>
   
 </head>
@@ -94,59 +110,94 @@
   <section class="post-project vendor-bg-s2">
     <div class="container">
         <div class="row py-5  align-items-center">
-          <div class="col-md-2 pr-lg-5 " ></div>
+          
     
              <!-- Post Project -->
-             <div class="col-md-12 col-md-offset-2"  data-aos="fade-left">
-                <div class="pp-form-card">
+             <div class="col-md-12 "  data-aos="fade-left">
+                <div class="pp-form-card  s3">
                     <!-- Title -->
                     <div class="form-card-title text-center" style="padding: 20px 0;">
                       <h3 class="font-weight-bold"> <span style="color: #82C424;">Service </span>Information</h3>
                     </div>
                     <!-- progressbar -->
-                <div class="stepwizard col-md-offset-3">
-                  <div class="stepwizard-row setup-panel">
-                    <div class="stepwizard-step">
-                      <a href="#step-1" type="button" class="btn step-btn-active btn-circle">1</a>
-                      <p class="font-weight-bold">Step 1</p>
-                    </div>
-                    <div class="stepwizard-step">
-                      <a href="#step-2" type="button" class="btn step-btn-active btn-circle" disabled="disabled">2</a>
-                      <p class="font-weight-bold">Step 2</p>
-                    </div>
-                    <div class="stepwizard-step">
-                      <a href="#step-3" type="button" class="btn step-btn-active btn-circle" disabled="disabled">3</a>
-                      <p class="font-weight-bold">Step 3</p>
-                    </div>
-                  </div>
-                </div>
+                      <div class="stepwizard col-md-offset-3">
+                        <div class="stepwizard-row setup-panel">
+                          <div class="stepwizard-step">
+                            <a href="#step-1" type="button" class="btn step-btn-active btn-circle">1</a>
+                            <p class="font-weight-bold">Step 1</p>
+                          </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-2" type="button" class="btn step-btn-active btn-circle" disabled="disabled">2</a>
+                            <p class="font-weight-bold">Step 2</p>
+                          </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-3" type="button" class="btn step-btn-active btn-circle" disabled="disabled">3</a>
+                            <p class="font-weight-bold">Step 3</p>
+                          </div>
+                        </div>
+                      </div>
                     
                     
-                        <form class="pp-form">
+                        <form class="pp-form service-form">
                             <div class="row">
                                        
                                <!-- Select Services  -->  
                                <div class="col-lg-12 mb-4">
                                 <label class="font-weight-bold">Services</label>
                                 <select id="multiple" class="js-states form-control  border-sm" multiple>
-                                  <option>Website Maintenance</option>
-                                  <option>Content Management System(CMS)</option>
-                                  <option>Game Development</option>
-                                  <option>Website Development</option>
-                                  <option>Mobile Application Development</option>
-                                  <option>Market Industry Research</option>
-                                  <option>Data Entry And Research</option>
-                                  <option>Finance And Legal</option>
-                                  <option>Business Development</option>
+                                  <option value="1" data-selected=0>Website Maintenance</option>
+                                  <option value="2" data-selected=0>Content Management System(CMS)</option>
+                                  <option value="3" data-selected=0>Game Development</option>
+                                  <option value="4" data-selected=0>Website Development</option>
+                                  <option value="5" data-selected=0>Mobile Application Development</option>
+                                  <option value="6" data-selected=0>Market Industry Research</option>
+                                  <option value="7" data-selected=0>Data Entry And Research</option>
+                                  <option value="8" data-selected=0>Business Development</option>
+                                  <option value="9" data-selected=0>Finance And Legal</option>
                                   <!-- <option></option>
                                   <option></option> -->
                                 </select>
+
+                                <div class=" my-2 ">
+                                                
+                                  <div class="table-responsive" id="mydiv">
+                                      <!-- <table class="table mb-0 text-center" id="">
+                                          <thead>
+                                              <tr>
+                                                  
+                                                  <th class="">Service Name</th>
+                                                  <th class="cell">Minimum Price (in  ₹)</th>
+                                                  <th class="cell">Maximum Price (in  ₹)</th>
+                                                  <th class="cell"> <button type="button" class="btn" data-toggle="collapse" data-target="#collapse_1"><i class="fas fa-chevron-down"></i></button></th>
+                                              </tr>
+                                          </thead> 
+                                          <tbody id="" class="vcs-tbody">
+                                              <tr>
+                                                  <td >
+                                                      <input name="customservice" id="customservice" type="text" class="form-control  border-sm" required="">
+                                                  </td>
+                                                  <td >
+                                                       <input name="minPriceDefault" id="os_min_price" type="number" class="form-control  border-sm" required="">
+                                                  </td>
+                                                  <td >
+                                                      <input name="maxPriceDefault" id="os_max_price" type="number" class="form-control  border-sm" required="">
+                                                  </td>
+                                                  
+                                              </tr>
+                                              
+          
+                                          </tbody>
+                                      </table> -->
+                                  </div>
+                               
+                                </div>
                               </div>  
               
                                <!-- Add Custom Services  -->  
                                <div class="col-lg-12 mb-4">
                                 <label class="font-weight-bold">Add Custom Services</label>
-                                  <div class="row">
+                                <button type="button" id="add-service" class="border-0 bg-white" style="color:#82c424;"><i class="fas fa-plus-circle"></i></button>
+                                  <!-- <div class="row">
                                     <div class="input-group col-lg-4 mb-4">
                                       
                                       <input id="City" type="text" name="City" placeholder="City / Town" class="form-control pp-form-input bg-white  border-sm" required="">
@@ -159,22 +210,75 @@
                                       
                                       <input id="City" type="text" name="City" placeholder="City / Town" class="form-control pp-form-input bg-white  border-sm" required="">
                                     </div>
+                                  </div> -->
+
+                                  <div class="shadow-sm mb-5">
+                                                
+                                    <div class="table-responsive" id="mydiv">
+                                        <table class="table mb-0 text-center" id="">
+                                            <thead>
+                                                <tr>
+                                                    
+                                                    <th class="">Service Name</th>
+                                                    <th class="cell">Minimum Price (in  ₹)</th>
+                                                    <th class="cell">Maximum Price (in  ₹)</th>
+                                                    <th class="cell"> Action</th>
+                                                </tr>
+                                            </thead> 
+                                            <tbody id="custom-tbody" class="vcs-tbody">
+                                                <tr>
+                                                    <td >
+                                                        <input name="customservice" id="customservice" type="text" class="form-control  border-sm" required="">
+                                                    </td>
+                                                    <td >
+                                                         <input name="minPriceDefault" id="os_min_price" type="number" class="form-control  border-sm" required="">
+                                                    </td>
+                                                    <td >
+                                                        <input name="maxPriceDefault" id="os_max_price" type="number" class="form-control  border-sm" required="">
+                                                    </td>
+                                                    <td >
+                                                        <button type="button" data-tr-id="ctr_1" id="" class="btn btn-danger bg-gradient-danger remove-service"><i class="far fa-trash-alt"></i></button>  
+                                                    </td>
+                                                </tr>
+                                                
+
+                                               <!--  <tr id="custom-row">
+                                                    <td class="cell">
+                                                        <input name="customservice" id="customservice" type="input" class="select-border" required>
+                                                    </td>
+                                                    <td class="cell">
+                                                        ₹ <input name="minPriceDefault" id="min_price_default" type="input" class="select-border" style="width: 50%;" required>
+                                                    </td>
+                                                    <td class="cell">
+                                                        ₹ <input name="maxPriceDefault" id="max_price_default" type="input" class="select-border" style="width: 50%;" required>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <input type="button" value="Add" class="btn btn-primary bg-gradient-primary ">
+                                                        <button type="button" id="remove-service" class="btn btn-danger bg-gradient-danger ">Remove</button>
+                                                      
+                                                    </td>
+                                                </tr> -->
+                                                
+                                               
+            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                 
                                   </div>
                                     
 
                               </div> 
                                   <!-- Address Name  -->
                                  
-                                
               
-                                
+                            </div>
+                            
                                   <!-- Submit Button -->
                                   <div class="form-group col-lg-12 mx-auto mb-0 text-center">
                                      
-                                      <input class="exmyb-form-btn login-btn font-weight-bold" type="submit" name="submit_signup" value="Save">
-                                  </div>
-              
-                            </div>
+                                    <input class="exmyb-form-btn login-btn font-weight-bold" type="submit" name="submit_signup" value="Save">
+                                </div>
                            
                           </form>
                     </div>
@@ -282,14 +386,8 @@
 
   <!-- Select2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  <script>
-    
-    $("#multiple").select2({
-        placeholder: "Choose Services...",
-        allowClear: true
-    });
-  </script>
-
+  <script src="assets/js/select-services.js"></script>
+  
 </body>
 
 </html>
