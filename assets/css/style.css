@@ -1170,6 +1170,20 @@ margin: auto;
 }
 
 /*--------------------------------------------------------------
+# For Vendors
+--------------------------------------------------------------*/
+
+
+@media (max-width: 768px) {
+  .cntl-bar,.cntl-bar-fill{display: none;}
+  .cntl-state i.icon{display: none;}
+  .cntl-content {width: 100%!important;box-shadow: 0 7px 20px rgb(67 103 15 / 6%)!important;}
+  .cntl-content:after,.right:before {    content: ''; display: none;}
+  .right{box-shadow: 0 7px 20px rgb(67 103 15 / 6%)!important;}
+  .dots-feat{display: none;}
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {

@@ -43,19 +43,41 @@
 }
 
 .cntl-content {
-    padding: 30px 45px;
+    /* padding: 30px 45px; */
+    padding: 20px 40px;
     background: #ffffff;
     position: relative;
-    /* border: 5px solid #eeeeee; */
-    border-radius: 500px 0 500px 500px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 0 8px 30px -7px #dbdde2; */
+    border-radius: 20px;
     box-shadow: 10px 10px 20px -5px #dbdde2;
 
 }
+.cntl-content:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    border-top: 15px solid transparent;
+    border-right: none;
+    border-left: 15px solid white;
+    border-bottom: 15px solid transparent;
+    right: -15px;
+}
 .right {
-    border-radius: 0 500px 500px 500px;
-    box-shadow: -10px 10px 20px -5px #dbdde2!important;
+  border-radius: 20px;
+    box-shadow: -10px 10px 20px -5px #dbdde2;
+}
+.right:before {
+    content: " ";
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #fff;
+    border-left: none;
+    border-bottom: 15px solid transparent;
+}
+.cntl-content p{
+font-size: 14px;
+text-align: justify;
 }
 
 .cntl-image img{
@@ -122,34 +144,34 @@
           <h4 class="text-primary font-weight-bold text-right">Step  1</h4>
           <p>Create your profile and tell us about your agency 1-on-1. Add your previous work, pricing parameters etc. We use this information and more, to help find the best projects for you. The more detailed the profile, higher the chances of you receiving projects, so make sure to fill those blanks! </p>
         </div>
-        <div class="cntl-image" data-aos="zoom-in"><img src="assets/img/tl-1.jpg" class="img-fluid d-none d-md-block"></div>
+        <div class="cntl-image" data-aos="zoom-in" data-aos-duration="3000"><img src="assets/img/create-profile-exmyb.svg" class="img-fluid d-none d-md-block"></div>
         <i class="icon far fa-smile cntl-icon cntl-center" ></i>
         
         <!-- <div class="cntl-icon cntl-center">1</div> -->
       </div>
       <div class="cntl-state ">
-        <div class="cntl-content right" data-aos-duration="3000">
+        <div class="cntl-content right" data-aos-duration="4000">
           <h4 class="text-warning font-weight-bold">Step  2</h4>
           <p> Many companies come to ExMyB looking to procure their services. ExMyB uses a proprietary algorithm with the use of Machine Learning to define the clients requirements and get you matched with them. </p>
         </div>
-        <div class="cntl-image" data-aos="zoom-in" data-aos-duration="3000"><img src="assets/img/tl-2.jpg" class="img-fluid d-none d-md-block"></div>
+        <div class="cntl-image" data-aos="zoom-in" data-aos-duration="3000"><img src="assets/img/algorithm.svg" class="img-fluid d-none d-md-block"></div>
         <i class="icon far fa-smile cntl-icon cntl-center" data-aos="zoom-in" data-aos-duration="1000"></i>
         <!-- <div class="cntl-icon cntl-center">2</div> -->
       </div>
       <div class="cntl-state">
-        <div class="cntl-content">
-          <h4 class="text-success font-weight-bold text-right" data-aos-duration="2000">Step  3</h4>
+        <div class="cntl-content"  data-aos-duration="2000">
+          <h4 class="text-success font-weight-bold text-right">Step  3</h4>
           <p> Get matched with clients & speak to them directly, understand their requirements, and start scoping the work with estimates of budget & timelines. Use the ExMyB Proposal Dashboard to create appealing & winning proposals with clear milestones and deliverables. </p>
         </div>
-        <div class="cntl-image" data-aos="zoom-in" data-aos-duration="1000"><img src="assets/img/tl-3.jpg" class="img-fluid d-none d-md-block"></div>
-        <i class="icon far fa-smile cntl-icon cntl-center" data-aos="zoom-in" data-aos-duration="8000"></i>
+        <div class="cntl-image" data-aos="zoom-in" data-aos-duration="8000"><img src="assets/img/meeting-with-client.svg" class="img-fluid d-none d-md-block"></div>
+        <i class="icon far fa-smile cntl-icon cntl-center" data-aos="zoom-in" data-aos-duration="6000"></i>
       </div>
       <div class="cntl-state">
         <div class="cntl-content right">
           <h4 class="text-danger font-weight-bold">Step  4</h4>
           <p> Once project is agreed, ExMyB manages the invoicing and payment process so you can focus on delivering great work for the client. ExMyB offers a unique Escrow payment solution to clients and vendors that is hassle-free and easily managed. </p>
         </div>
-        <div class="cntl-image" data-aos="zoom-in"><img src="assets/img/tl-4.jpg" class="img-fluid d-none d-md-block"></div>
+        <div class="cntl-image" data-aos="zoom-in"><img src="assets/img/Invoice-exmyb.svg" class="img-fluid d-none d-md-block"></div>
         <i class="icon far fa-smile cntl-icon cntl-center" data-aos="zoom-in" data-aos-duration="6000"></i>
       </div>
       <!-- <div class="cntl-state">
@@ -186,8 +208,6 @@
               <li><i class="ri-check-double-line"></i> Customised dashboard with analytics</li>
               <li><i class="ri-check-double-line"></i> Dedicated ExMyB Account Manager</li>
               <li><i class="ri-check-double-line"></i> Simple onboarding process</li>
-              <!-- <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li> -->
-              <!-- <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li> -->
             </ul>
         </div>
         <div id="counts" class="counts py-2">
@@ -219,7 +239,7 @@
 
       <div class="col-lg-6 pt-4 pt-lg-0">
           <div class="video-box">
-              <img src="assets/img/why_choose_exmyb.jpg" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-in" style="    border-radius: 10px;">
+              <img src="assets/img/why_exmyb.svg" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-in" style="    border-radius: 10px;">
          
              <!--  <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn venobox btn-watch-video vbox-item play-btn" data-vbtype="video" data-autoplay="true">
                 <i class="fas fa-play"></i>
