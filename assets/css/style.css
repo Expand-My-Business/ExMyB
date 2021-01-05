@@ -1765,6 +1765,71 @@ z-index:0 !important;
   margin: 0 auto;
   display: block;
 }
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services-card{
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 15px auto;
+  overflow: hidden;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  transition: transform .3s ease;
+  transform: translateY(7px);
+}
+
+.services-card i {
+    color: #fff;
+    font-size: 36px;
+    background: #82C424;
+    /* border-radius: 50px; */
+    border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+    padding: 15px 15px 15px 19px;
+    margin: 30px 0 0;
+
+}
+.services-card {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 7px 20px rgb(67 103 15 / 6%);
+    position: relative;
+}
+.services-card .services-card-icon img {
+  width: 60px;
+}
+.services-card-text p{
+ text-align: justify;
+}
+/* .services-card-text {
+  padding: 0 10px;
+} */
+.services-card:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px 0;
+    cursor: pointer;
+    -webkit-transition: inherit;
+    transition: inherit;
+    background-color: #f8f9fa;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/logo/favicon.png);
+}
+
+
+.services-card:hover {
+  transition: transform .3s ease;
+  transform: translateY(-7px);
+  box-shadow: 0 17px 35px rgba(74,74,115,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1802,6 +1867,7 @@ z-index:0 !important;
   transform: translateY(7px);
   box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
 }
+
 
 .contact-card:hover {
   transition: transform .3s ease;
