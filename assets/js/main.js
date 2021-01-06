@@ -255,11 +255,14 @@
 // For Changing Form input group text on focus in Login
 $(function () {
           
-          $('input, select').on('focus', function () {
-              $(this).parent().find('.input-group-text').css('border-color', '#82C424');
+          $('input, select').on('focusin', function () {
+              $(this).parent().find('.input-group-text,select').css('border-color', '#82C424');
           });
-          $('input, select').on('blur', function () {
-              $(this).parent().find('.input-group-text').css('border-color', '#82C424');
+          $('input, select').on('focusout', function () {
+              $(this).parent().find('.input-group-text,select').css('border-color', '#CED4DA');
           });
+         /*  $('input, select').on('blur', function () {
+              $(this).parent().find('.input-group-text').css('border-color', '#82C424');
+          }); */
       });
 
