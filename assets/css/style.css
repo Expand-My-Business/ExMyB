@@ -417,13 +417,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-/*   background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(147, 47, 69, 0.7) 76%, rgba(236, 97, 93, 0.7) 94%, rgba(236, 97, 93, 0.5) 100%) repeat scroll 0% 0%;
- */ 
- background: rgb(2,0,36);
- background: linear-gradient(180deg, rgb(2 0 36 / 87%) 3%, rgb(134 199 43 / 67%) 87%, rgba(130,196,36,1) 100%);
- 
-  /* background: linear-gradient(180deg, rgb(2 0 36 / 87%) 3%, rgb(134 199 43 / 48%) 87%, rgb(130 196 36 / 24%) 100%); */
-  position: absolute;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgb(2 0 36 / 54%), rgb(134 199 43 / 60%) 80%, rgb(130 196 36 / 71%) 100%); position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
@@ -531,7 +526,7 @@ p.tiny-title:after {
   z-index: -1;
 } 
 .cms-tech .card.card-2 {
-  border-radius: 10px;
+  border-radius: 25px;
   overflow: hidden;
 }
 .cms-tech .card-2 .card__body, .cms-tech .card-2 .card__bottom, .cms-tech .card-2 .card__top {
@@ -554,7 +549,7 @@ p.tiny-title:after {
 .card-2 .card__body, .card-2 .card__bottom {
   padding: 1.85714286em;
   /* border: 1px solid #ececec; */
-  border-bottom: 2px solid #82c424;
+  /* border-bottom: 2px solid #82c424; */
     border-radius: 10px;
 }
 .card-2 .card__body p {
@@ -566,6 +561,24 @@ p.tiny-title:after {
     font-weight: 600;
     text-shadow: 0 1px 0px #adb5bd;
     font-size: 20px;
+}
+.card.card-2:after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0;
+  cursor: pointer;
+  -webkit-transition: inherit;
+  transition: inherit;
+  background-color: #f8f9fa;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/logo/favicon.png);
 }
 .mt-60 {
   margin-top: 60px;
@@ -1052,21 +1065,22 @@ margin: auto;
   max-width: 100px;
   border-radius: 50%;
   margin: 15px auto 0;
-  box-shadow: 0 8px 20px -4px #95abbb;
+  box-shadow: 0 8px 20px -4px rgb(130 196 36 / 82%);
   width: 100px;
   height: 100px;
 }
 .gtco-testimonials .card h5 {
   color: #01b0f8;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.3;
 }
 .gtco-testimonials .card h5 span {
-  font-size: 18px;
+  font-size: 16px;
   color: #666666;
 }
 .gtco-testimonials .card p {
-  font-size: 18px;
+  text-align: justify;
+  font-size: 14px;
   color: #555;
   padding-bottom: 15px;
 }
@@ -1078,10 +1092,12 @@ margin: auto;
   opacity: 1;
 }
 .gtco-testimonials .center h5 {
-  font-size: 24px;
+  font-size: 18px;
 }
 .gtco-testimonials .center h5 span {
-  font-size: 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
 }
 .gtco-testimonials .center .card-img-top {
   max-width: 100%;
@@ -1451,10 +1467,10 @@ background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, F
 --------------------------------------------------------------*/
 .vendor-bg-s2{
   width: 100%;
-  background-image: url(../img/vendor-bg-two.jpg);
+  background-image: url(../img/vendor-form-bg.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  /* background-size: cover; */
 }
 /*--------------------------------------------------------------
 # Timeline Process
