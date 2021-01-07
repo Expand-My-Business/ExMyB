@@ -1693,6 +1693,7 @@ background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, F
 }
 
 
+
 /*progressbar*/
 
 .stepwizard-step p {
@@ -1751,7 +1752,23 @@ border: 1px solid #82C424;
   border-radius: 15px;
   
 }
+.upload-img{
+  padding: 0px!important;
+  color: #495057;
+  border: 1px solid #ced4da;
+  max-width: 465px;
+  margin: 0 auto;
+  }
+  #upload {
+    opacity: 0;
+  }
 
+  #upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
 .pp-form .form-control:focus{
 border-color: #82C424!important;
 box-shadow: 0 0 0 0.2rem rgba(255,255,255,.15);

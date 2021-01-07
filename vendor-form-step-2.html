@@ -97,6 +97,17 @@
                     
                         <form class="pp-form">
                             <div class="row">
+                                    <!-- Upload Image -->
+                                    <div class="input-group col-lg-12 mb-4 upload-img ">
+                                      <input id="upload" type="file" onchange="readURL(this);"
+                                        class="form-control pp-form-input bg-white border-sm" placeholder="Choose File" required>
+                                      <label id="upload-label" for="upload" class="font-weight-light text-muted">Your Company Logo </label>
+                                      <div class="input-group-append">
+                                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i
+                                            class="fas fa-cloud-upload-alt mr-2 text-muted"></i><small
+                                            class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                                      </div>
+                                    </div>
                                         <!-- Company Type -->
                                     <div class="input-group col-lg-12 mb-4">
                                       <div class="input-group-prepend">
