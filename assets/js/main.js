@@ -290,3 +290,31 @@ $("#datepicker").datepicker({
   defaultViewDate: {year: '2000'}
 });
 
+
+//GST and PAN Validation
+
+$(document).ready(function () {      
+  $("#gst").change(function () {    
+      var inputvalues = $(this).val();    
+      var gstinformat = new RegExp('^([0][1-9]|[1-2][0-9]|[3][0-7])([a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}[1-9a-zA-Z]{1}[zZ]{1}[0-9a-zA-Z]{1})+$');    
+      if (gstinformat.test(inputvalues)) {    
+          return true;    
+      } else {    
+          alert('Please Enter Valid GSTIN Number');    
+          $("#gst").val('');    
+          $("#gst").focus();    
+      }    
+  });   
+  $("#pan").change(function () {      
+      var inputpanvalues = $(this).val();
+      var panformat = new RegExp('^([a-zA-Z]{5})([0-9]{4})([a-zA-Z]{1})+$');    
+      if (panformat.test(inputpanvalues)) {    
+          return true;    
+      } else {    
+          alert('Please Enter Valid PAN Number');    
+          $("#pan").val('');    
+          $("#pan").focus();    
+      }   
+  });      
+
+});          
