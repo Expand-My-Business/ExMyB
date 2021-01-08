@@ -2234,6 +2234,12 @@ input[type=number] {
   border-width: 1px;
 }
 
+/* Datepicker on active */
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+  background-image: linear-gradient(to bottom, #82c424, #56ab2f)!important;
+  font-weight: 600;
+}
+
 
 /* .btn-facebook {
   background: #405D9D;

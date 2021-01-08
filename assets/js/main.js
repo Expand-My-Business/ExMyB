@@ -279,4 +279,14 @@ function showFileName( event ) {
   infoArea.textContent = 'File : ' + fileName;
 }
 
+//Establish Year - vendor form 2
+$("#datepicker").datepicker({
+  format: "yyyy",
+  viewMode: "years", 
+  minViewMode: "years",
+  changeYear: false,
+  startDate: '1900y',
+  endDate:'2021y',
+  defaultViewDate: {year: '2000'}
+});
 
