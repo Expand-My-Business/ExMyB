@@ -2259,3 +2259,205 @@ input[type=number] {
   background: #1799e4;
 }
  */
+
+/* Vendor Step 3 */
+ 
+ .select2-container--default .select2-selection--multiple {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  cursor: text;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+border: 1px solid #ced4da!important;
+border-radius: .25rem;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #82c424;
+  border: 1px solid #82c424;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #000;
+  /* margin-left: 2px; */
+  margin: 0 5px;
+  float: right;
+}
+.select2-search--inline .select2-search__field {
+  margin-top: 10px!important;
+}
+input.select2-search__field::placeholder{
+padding-left: 5px;
+color: #CCCCCC;
+font-weight: 600;
+font-family: inherit!important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+  font-size: 20px!important;
+}
+.pp-form-card.s3{
+max-width: 100%;
+}
+#mydiv table{
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.vcs-tbody input.form-control{
+padding: .375rem .25rem!important;
+font-size: 14px!important;
+}
+.vcs-tbody input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 600;
+}
+.vcs-tbody.table td, .table th {
+vertical-align: middle!important;
+}
+.vcs-tbody thead{
+background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+.vcs-tbody thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  border-bottom: none!important;
+  border-top: none!important;
+}
+.vcs-tbody th:first-child{
+border-radius:10px 0 0 0;
+}
+
+.vcs-tbody th:last-child{
+border-radius:0 10px 0 0;
+}
+
+.vcs-tbody th:nth-child(1) { 
+width: 10%; 
+} 
+.vcs-tbody th:nth-child(2) { 
+width: 40%; 
+} 
+.vcs-tbody th:nth-child(3) { 
+width: 20%; 
+} 
+.vcs-tbody th:nth-child(4) { 
+width: 20%; 
+} 
+.vcs-tbody th:nth-child(5) { 
+width: 10%; 
+} 
+
+thead.avcs-tbody {
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  color: #fff;
+  font-weight: 600;
+}
+thead.avcs-tbody  th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  border-bottom: none!important;
+  border-top: none!important;
+  font-weight: 600!important;
+  font-size: 14px!important;
+}
+.avcs-tbody th:first-child{
+border-radius:10px 0 0 0;
+}
+
+.avcs-tbody th:last-child{
+border-radius:0 10px 0 0;
+}
+.avcs-tbody input.form-control {
+padding: .375rem .25rem!important;
+font-size: 14px!important;
+}
+.avcs-tbody th:nth-child(1) { 
+width: 46%; 
+} 
+.avcs-tbody th:nth-child(2) { 
+width: 22%; 
+} 
+.avcs-tbody th:nth-child(3) { 
+width: 22%; 
+} 
+.avcs-tbody th:nth-child(4) { 
+width: 10%; 
+} 
+th:last-child{
+border-radius:0 10px 0 0;
+}
+
+/* .cell button{
+border-color: #fff!important;
+} */
+.cell button i{
+color: #fff!important;
+}
+.select2-container {
+width: 100%!important;
+}
+/*--checkedBox--- */
+
+.checkbox {
+width: 100%;
+position: relative;
+display: block;
+}
+.checkbox label {
+position: relative;
+min-height: 34px;
+display: block;
+margin-bottom: 0;
+font-weight: normal;
+cursor: pointer;
+}
+.checkbox label span {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+.checkbox label:before {
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+margin: 11px 4px;
+width: 15px;
+height: 15px;
+transition: transform 0.28s ease;
+border-radius: 3px;
+border: 2px solid #ced4da;
+}
+.checkbox label:after {
+content: "";
+display: block;
+width: 9px;
+  height: 5px;
+  border-bottom: 2px solid #82C424;
+  border-left: 2px solid #82C424;
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  position: absolute;
+  top: 15px;
+  left: 7px;
+}
+.checkbox input[type=checkbox] {
+width: auto;
+opacity: 1e-8;
+position: absolute;
+left: 0;
+margin-left: -20px;
+}
+.checkbox input[type=checkbox]:checked ~ label:before {
+border: 2px solid #82c424;
+}
+.checkbox input[type=checkbox]:checked ~ label:after {
+transform: rotate(-45deg) scale(1);
+}
+.checkbox input[type=checkbox]:focus + label::before {
+outline: 0;
+}

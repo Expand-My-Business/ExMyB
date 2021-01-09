@@ -36,12 +36,12 @@ $(function() {
 
                 var tthead = `
                               <thead class="vcs-tbody">
-                                <tr>
+                                <tr class="">
                                     
-                                    <th class=""><input name="all_checkboxes" class="top_check all_checkboxes" id="ch_${new_id}" type="checkbox" value="l2_${new_id}" ></th>
+                                    <th class=""><div class="checkbox"><input name="all_checkboxes" class="top_check all_checkboxes" id="ch_${new_id}" type="checkbox" value="l2_${new_id}" ><label for="ch_${new_id}"></label></div></th>
                                     <th class="cell"><input type="text" value="${myjson[new_id]['l2_info']['name']}" name="l2_${new_id}_name" class="form-control  border-sm " disabled></th>
-                                    <th class="cell"><input name="l2_${new_id}_minprice" id="min_price_default" type="number" placeholder="Minimum Price (in ₹)" class="form-control  border-sm" ></th>
-                                    <th class="cell"><input name="l2_${new_id}_maxprice" id="max_price_default" type="number" placeholder="Maximum Price (in ₹)" class="form-control  border-sm" ></th>
+                                    <th class="cell"><input name="l2_${new_id}_minprice" id="min_price_default" type="number" placeholder="Min Price (₹)" class="form-control  border-sm" ></th>
+                                    <th class="cell"><input name="l2_${new_id}_maxprice" id="max_price_default" type="number" placeholder="Max Price (₹)" class="form-control  border-sm" ></th>
                                     <th class="cell"> <button type="button" class="btn" data-toggle="collapse" data-target="#collapse_${new_id}"><i class="fas fa-chevron-down"></i></button></th>
                                 </tr>
                               </thead> 
@@ -55,10 +55,10 @@ $(function() {
 
                         ttrow = `
                                   <tr>
-                                      <td class="cell">
+                                      <td class="cell checkbox">
                                           
-                                          <input name="all_checkboxes" class="ch_${new_id} all_checkboxes " id="checkbox_1" type="checkbox" value="l2_${new_id}_l3_${temp[j]['id']}">
-                                          
+                                          <input name="all_checkboxes" class="ch_${new_id} all_checkboxes " id="checkbox_${new_id}_${temp[j]['id']}" type="checkbox" value="l2_${new_id}_l3_${temp[j]['id']}">
+                                          <label for="checkbox_${new_id}_${temp[j]['id']}"></label>
                                       </td>
                                       <td class="cell"><input type="text" name="l2_${new_id}_l3_${temp[j]['id']}_name" value="${temp[j]['name']}" class="form-control  border-sm"></td>
                                       <td class="cell">

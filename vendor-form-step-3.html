@@ -34,51 +34,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
   <style>
-      .select2-container--default .select2-selection--multiple {
-          border: 1px solid #ced4da;
-          border-radius: .25rem;
-          cursor: text;
-      }
-      .select2-container--default.select2-container--focus .select2-selection--multiple {
-        border: 1px solid #ced4da!important;
-        border-radius: .25rem;
-      }
-      
-    .select2-container--default .select2-selection--multiple .select2-selection__choice {
-          background-color: #82c424;
-          border: 1px solid #82c424;
-          color: #fff;
-          border-radius: 20px;
-          font-size: 14px;
-          padding: 5px 10px;
-      }
-      .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-          color: #000;
-          margin-left: 2px;
-          float: right;
-      }
-      input.select2-search__field::placeholder{
-        padding-left: 5px;
-        color: #CCCCCC;
-        font-weight: 600;
-        font-family: inherit!important;
-      }
-      .pp-form-card.s3{
-        max-width: 100%;
-      }
-      .vcs-tbody input.form-control{
-        padding: .375rem .75rem!important;
-      }
-      .vcs-tbody.table td, .table th {
-        vertical-align: middle;
-      }
-      .vcs-tbody thead{
-        background-color: #dee2e6;
-      }
-      .select2-container {
-        width: 100%!important;
-      }
-
+     
   </style>
   
 </head>
@@ -107,13 +63,13 @@
   </header>
   <!-- End Header -->    
 
-  <section class="post-project vendor-bg-s2" style="background: url('assets/img/vendor-step-3-bg.svg')!important;">
+  <section class="post-project vendor-bg-s2" >
     <div class="container">
         <div class="row py-5  align-items-center">
-          
+          <div class="col-md-2 pr-lg-5 mb-5 "></div>
     
              <!-- Post Project -->
-             <div class="col-md-12 "  data-aos="fade-left">
+             <div class="col-md-8 col-md-offset-2"  data-aos="fade-left">
                 <div class="pp-form-card  s3">
                     <!-- Title -->
                     <div class="form-card-title text-center" style="padding: 20px 0;">
@@ -158,7 +114,7 @@
                                   <option></option> -->
                                 </select>
 
-                                <div class=" my-2 ">
+                                <div class=" my-2">
                                                 
                                   <div class="table-responsive" id="mydiv">
                                       <!-- <table class="table mb-0 text-center" id="">
@@ -216,16 +172,16 @@
                                                 
                                     <div class="table-responsive" id="mydiv">
                                         <table class="table mb-0 text-center" id="">
-                                            <thead>
+                                            <thead class="avcs-tbody">
                                                 <tr>
                                                     
                                                     <th class="">Service Name</th>
-                                                    <th class="cell">Minimum Price (in  ₹)</th>
-                                                    <th class="cell">Maximum Price (in  ₹)</th>
+                                                    <th class="cell">Min Price (₹)</th>
+                                                    <th class="cell">Max Price (₹)</th>
                                                     <th class="cell"> Action</th>
                                                 </tr>
                                             </thead> 
-                                            <tbody id="custom-tbody" class="vcs-tbody">
+                                            <tbody id="custom-tbody" class="avcs-tbody">
                                                 <tr>
                                                     <td >
                                                         <input name="customservice" id="customservice" type="text" class="form-control  border-sm" required="">
