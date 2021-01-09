@@ -2262,45 +2262,6 @@ input[type=number] {
 
 /* Vendor Step 3 */
  
- .select2-container--default .select2-selection--multiple {
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  cursor: text;
-}
-.select2-container--default.select2-container--focus .select2-selection--multiple {
-border: 1px solid #ced4da!important;
-border-radius: .25rem;
-}
-
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-  background-color: #82c424;
-  border: 1px solid #82c424;
-  color: #fff;
-  border-radius: 20px;
-  font-size: 14px;
-  padding: 5px 10px;
-}
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-  color: #000;
-  /* margin-left: 2px; */
-  margin: 0 5px;
-  float: right;
-}
-.select2-search--inline .select2-search__field {
-  margin-top: 10px!important;
-}
-input.select2-search__field::placeholder{
-padding-left: 5px;
-color: #CCCCCC;
-font-weight: 600;
-font-family: inherit!important;
-}
-.select2-container--default .select2-selection--multiple .select2-selection__clear {
-  font-size: 20px!important;
-}
-.pp-form-card.s3{
-max-width: 100%;
-}
 #mydiv table{
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
