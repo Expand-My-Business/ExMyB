@@ -76,7 +76,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .4s;
 }
 
-
+.exmyb-text-color{
+  color:#82c424!important
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1040,7 +1042,7 @@ margin: auto;
   border-radius: 50%;
   display: block;
   background: #fff;
-  border: 2px solid #82c424;
+  border: 2px solid #22262aba;;
   margin: 0 5px;
 }
 .gtco-testimonials .owl-dots .active {
@@ -1060,12 +1062,14 @@ margin: auto;
   padding: 0 10px;
   border-radius: 20px;
   border: 0;
+  cursor: e-resize;
 }
 .gtco-testimonials .card .card-img-top {
   max-width: 100px;
   border-radius: 50%;
   margin: 15px auto 0;
-  box-shadow: 0 8px 20px -4px rgb(130 196 36 / 82%);
+  box-shadow: 0 4px 2px #0c0c0c4a;
+  /* box-shadow: 0 8px 20px -4px rgb(130 196 36 / 82%); */
   width: 100px;
   height: 100px;
 }
@@ -1085,7 +1089,7 @@ margin: auto;
   padding-bottom: 15px;
 }
 .gtco-testimonials .active {
-  opacity: 0.5  ;
+  opacity: 0.9  ;
   transition: all 0.3s;
 }
 .gtco-testimonials .center {
@@ -1093,11 +1097,12 @@ margin: auto;
 }
 .gtco-testimonials .center h5 {
   font-size: 18px;
+  font-weight: bold;
 }
 .gtco-testimonials .center h5 span {
-    font-size: 16px;
-    color: #000;
-    font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
 }
 .gtco-testimonials .center .card-img-top {
   max-width: 100%;
