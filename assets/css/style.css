@@ -1477,6 +1477,25 @@ background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, F
   background-position: center center;
   /* background-size: cover; */
 }
+
+@media (min-width:321px) and (max-width:600px) {
+  .vendor-bg-s2{padding: 5px 0!important;background-position: center;    background-repeat: repeat-y;}
+  .vendor-bg-s2 div.pp-form-card{padding: 20px!important;  }
+  .vcs-tbody{width: 500px;overflow-x:auto;}
+  .select2-selection__clear{display: none;}
+  .vcs-tbody th:nth-child(1) {width: 10%!important;}
+  .vcs-tbody th:nth-child(2) {width: 40%!important;}
+  .vcs-tbody th:nth-child(3) {width: 20%!important;}
+  .vcs-tbody th:nth-child(4) {width: 20%!important;}
+  .vcs-tbody th:nth-child(5) {width: 10%!important;}
+
+  thead.avcs-tbody{width: 500px;overflow-x:auto;}
+  .avcs-tbody th:nth-child(1) {width: 40%!important;}
+  .avcs-tbody th:nth-child(2) {width: 25%!important;}
+  .avcs-tbody th:nth-child(3) {width: 25%!important;}
+  .avcs-tbody th:nth-child(4) {width: 10%!important;}
+  
+}
 /*--------------------------------------------------------------
 # Timeline Process
 --------------------------------------------------------------*/
@@ -2188,6 +2207,9 @@ select.form-control {
 #footer svg{
   display: none;
 }
+#footer .footer-top a img {margin:20px auto;width: 150px;}
+#footer .footer-top{text-align: center;}
+#footer .footer-top .footer-links ul {display: inline-block;}
 }
 /* @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
