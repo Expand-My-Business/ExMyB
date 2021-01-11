@@ -75,6 +75,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #56ab2f;
   transition: all .4s;
 }
+.vm-shadow{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.vm-shadow:hover {
+  background-color: #82C424;
+  box-shadow: 0px 15px 20px rgb(130 196 36 / 20%);
+  color: #fff;
+  transition: all .4s;
+  transform: translateY(-2px);
+}
+.vm-shadow:hover,span.btn_text {
+  color: #fff!important;
+  background-color: #82C424;
+}
 
 .exmyb-text-color{
   color:#82c424!important
@@ -326,9 +340,9 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #150517;
+  color: #150517!important;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
 }
 
@@ -419,8 +433,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgb(2 0 36 / 54%), rgb(134 199 43 / 60%) 80%, rgb(130 196 36 / 71%) 100%); position: absolute;
+  background: rgb(10 10 10 / 20%);
+  /* background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgb(2 0 36 / 54%), rgb(134 199 43 / 60%) 80%, rgb(130 196 36 / 71%) 100%);  */
+  position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
@@ -498,11 +514,11 @@ h1, h2, h3, h4, h5, h6 {
 # Curve Shapes
 --------------------------------------------------------------*/
 .bg-img-curve{
-  background: url(../img/bg-1.png) no-repeat;
-  background-color: #eee;
+  background: url(../img/feature-wave.svg) no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 320px;
   margin-top: -20px;  
+  padding: 40px 0!important;
 }
 .tiny-title {
   position: relative;

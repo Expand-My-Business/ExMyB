@@ -51,10 +51,10 @@
       <h1> Expand Your Business!</h1>
       <!-- <h2>Instantly match with verified, expert IT agencies</h2> -->
       <h2>Find the best service provider for -
-        <span class="txt-rotate" style="color:#82C424; font-weight: bold;" data-period="2000"
-          data-rotate='[ "Website.", "Application.", "Seo.", "Others." ]'></span>
+        <span class="txt-rotate" style="color:#82C424;font-size: 36px; font-weight: bold;" data-period="2000"
+          data-rotate='[ "Website Development", "Application Development", "Digital Marketing.", "SEO" ]'></span>
       </h2>
-      <a href="post-project.html" class="btn-get-started scrollto">Post a project</a>
+      <a href="post-project.html" class="btn-get-started scrollto rounded" >Post a project</a>
     </div>
   </section>
   <!-- End Hero -->
@@ -65,13 +65,13 @@
 
       <div class="logo mr-auto">
 
-        <a href="index.html"><img src="./assets/img/logo/exmyb_logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="./assets/img/logo/exmyb_logo_white.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">ExMyB</a></li>
-          <li><a href="for-vendors.html">For Vendors</a></li>
+          <li><a href="index.html" class="text-white">ExMyB</a></li>
+          <li><a href="for-vendors.html" class="text-white">For Vendors</a></li>
           <li><a href="post-project.html" class="exmyb-btn post-project-btn ">Post Project</a></li>
           <li><a href="login.html" class="exmyb-btn login-btn ">Login</a></li>
         </ul>
@@ -89,37 +89,37 @@
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-          <img src="assets/img/clients/amys.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/yourstory.png" class="img-fluid" alt="" >
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
-          <img src="assets/img/clients/clove_dental.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/busineesLineTheHindu.png" class="img-fluid" style="max-width: 70%;" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="700" data-aos-offset="0">
-          <img src="assets/img/clients/CBRE.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/busineesWorld.png" class="img-fluid" style="max-width: 70%;" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="900" data-aos-offset="0">
-          <img src="assets/img/clients/fedex_express_logo.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/iifl.png" class="img-fluid" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="1100" data-aos-offset="0">
-          <img src="assets/img/clients/rapsodia.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/financial_express.png" class="img-fluid" style="max-width: 70%;" alt="">
         </div>
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="1300" data-aos-offset="0">
-          <img src="assets/img/clients/swiggy.png" class="img-fluid" alt="">
+          <img src="assets/img/featured/ciol.jpg" class="img-fluid" alt="">
         </div>
 
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
 
         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
@@ -151,7 +151,7 @@
           <img src="assets/img/clients/swiggy.png" class="img-fluid" alt="">
         </div>
 
-      </div>
+      </div> -->
 
     </div>
   </section>
@@ -198,7 +198,7 @@
           </h1>
           <p class="text-justify">We have identified and displayed some of the top services being used by all businesses in the world right now. ExMyB has qualified and vetted service vendors for each of the services being provided and will connect you with the best one according to your exact requirements.</p>
           <p class="text-justify">Our vendors have the right kind of experience and would have served clients in similar industry to yours. At ExMyB, we strongly believe in the power of domain knowledge. By choosing a correct vendor with experience in an industry, the product is better, while timelines, costs & issues are kept to a minimum.</p>
-          <a class="btn exmyb-btn-one" href="services.html" style="margin: 10px 0;">
+          <a class="btn exmyb-btn-one vm-shadow" href="services.html" style="margin: 10px 0;">
             <span class="btn__text"> View More <i class="fas fa-arrow-right mx-1"></i> </span>
           </a>
         </div>
@@ -611,7 +611,23 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
 
+$(window).scroll(function () {
+                var header_ofset = $('#header').offset().top - $(window).scrollTop();
+               
+                if (header_ofset<1) { 
+                  $('#header').addClass('header-scrolled');
+                  $('#header .logo img').attr('src','./assets/img/logo/exmyb_logo.png'); 
+                  $('#header ul li a').removeClass('text-white'); 
+                }
+                else{
+                  $('#header').removeClass('header-scrolled');
+                  $('#header .logo img').attr('src','./assets/img/logo/exmyb_logo_white.png');
+                  $('#header ul li a').addClass('text-white '); 
+                }
+            })
+  </script>
 
 </body>
 
