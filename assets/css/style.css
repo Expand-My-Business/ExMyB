@@ -2465,3 +2465,30 @@ transform: rotate(-45deg) scale(1);
 .checkbox input[type=checkbox]:focus + label::before {
 outline: 0;
 }
+
+.wa-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+  box-shadow: 0 8px 30px -7px rgb(219 221 226 / 55%);
+  z-index:99999;
+}
+
+.whatsaap-float{
+	margin-top:16px;
+}
+.wa-float:hover{background-color: #fff;color: #25d366;border: 1px solid;}
+
+.wa-hide {
+  opacity:0;
+}
+.wa-show {
+  opacity:1;
+}

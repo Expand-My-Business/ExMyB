@@ -592,6 +592,10 @@
 
   </footer>
 
+<a href="https://api.whatsapp.com/send?phone=918882102246" class="wa-float wa-hide" target="_blank" id="wa-id" data-aos="fade-up" data-aos-delay="500">
+  <i class="fab fa-whatsapp whatsaap-float"></i>
+</a>  
+
 
   <!--  JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -627,6 +631,19 @@ $(window).scroll(function () {
                 }
             });
         
+  // for whatsApp  Button
+  myID = document.getElementById("wa-id");
+
+    var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+            myID.className = "wa-float wa-show aos-init aos-animate"
+        } else {
+            myID.className = "wa-float wa-hide"
+        }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);    
 
   </script>
 
