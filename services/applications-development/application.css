@@ -117,6 +117,7 @@ transition: all 0.3s ease 0s;
 }
 .icon img{
 width: 70px;
+border-radius: 10px;
 }
 .icon h6{
     color: #827678;
@@ -631,7 +632,7 @@ position: relative;
 overflow: hidden;
 max-width: 1500px;
 margin: 0 auto;
-padding: 0px 20px;
+padding: 0px 0px;
 margin-top: -72px;
 }
 
@@ -737,7 +738,7 @@ transition: transform 600ms;
 
 .ct-form input[type='email'], .ct-form input[type='text'], .ct-form input[type='number'] {
     height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #3B566E;
 }
 
@@ -745,4 +746,58 @@ transition: transform 600ms;
     height: 150px;
     margin-bottom: 30px;
     color: #3B566E;
+}
+
+/* ---responsive--- */
+@media (max-width: 767.98px) {
+    .app-carousel .owl-stage-outer {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .cta-hero{height: 70vh!important;padding:40px 10px!important;}
+    .cta-text{padding: 0!important;}
+    .cta-hero .cta-form-card{display: none!important;}
+    .welcome-apps .app-card{margin-left: 0!important;}
+    .welcome-apps .app-title{padding: 0;margin: 0;padding-bottom: 20px;text-align: center;}
+    .icon img{width: 55px;}
+    .icon .ha{width: 45px!important;}
+    .services-section {padding: 10px;}
+    .features{padding-left: 0;}
+    .app-carousel-inner{margin-left: -20px;}
+    .app-carousel .single-app-image img {
+        width: 90%;
+        margin: 40px 20px;
+    }
+    #contact{padding-top: 40px!important;}
+    .form-img img{display: none;}
+}
+
+@media (max-width: 379.98px) {
+    .app-carousel-inner {
+        position: relative;
+        width: 320px;
+        height: 770px;
+        padding: 108px 0px;
+        margin-top: 12px;
+    }
+
+    .app-carousel .single-app-image img {
+        margin: 40px 0px;
+    }
+
+    .app-carousel .single-app-image img {
+        margin: 40px auto;
+    }
+
+    .app-carousel-inner {
+        background: transparent;
+        padding: 0;
+        height: 594px;
+    }
+
+    .app-carousel .owl-dots {
+        margin-top: 0;
+    }
 }
