@@ -10,14 +10,18 @@
 .exmyb-text-black{color: #000;}
 .exmyb-btn-black{
     background-color: #000;
-    color: #fff!important;
+    color: #fff;
     border: 2px solid #000;
 }
 .exmyb-btn-tranparent{
-    background-color: #fff;
-    color: #000!important;
+    background-color: #fff0;
+    color: #fff!important;
     border: 2px solid #fff;
     border-radius: 5px!important;
+}
+.exmyb-btn-tranparent:hover{
+    background-color: #fff;
+    color: #000!important;
 }
 .exmyb-btn-gs{
     display: block;
@@ -53,6 +57,31 @@
 .gs-btn-two:hover{
     background: #fff;
     color: #82c424;
+}
+.gs-btn-three{
+    display: block;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.81px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+.gs-btn-three:hover{
+    background: #fff;
+    color: #000;
 }
 .cta-hero{
   height: 82vh;
@@ -746,6 +775,10 @@ transition: transform 600ms;
     height: 150px;
     margin-bottom: 30px;
     color: #3B566E;
+}
+
+.clients img{
+    filter: none!important;
 }
 
 /* ---responsive--- */
