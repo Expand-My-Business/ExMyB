@@ -27,7 +27,7 @@
     display: block;
     width: 225px;
     height: 45px;
-    line-height: 45px;
+    line-height: 40px;
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 0.81px;
@@ -43,24 +43,25 @@
     cursor: pointer;
 }
 .gs-btn-one{
-    border: 2px solid #82c424;
-    color: #82c424;
+    border: 2px solid #333333;
+    color: #333333;
 }
 .gs-btn-one:hover{
-    background: #82c424;
+    background: #333333;
     color: #fff!important;
 }
 .gs-btn-two{
-    background: #82c424;
+    /* background: #82c424; */
+    border: 2px solid #fff;
     color: #fff;
 }
 .gs-btn-two:hover{
     background: #fff;
-    color: #82c424;
+    color: #333;
 }
 .gs-btn-three{
     display: block;
-    width: 40%;
+    /* width: 40%; */
     height: 50px;
     line-height: 45px;
     font-weight: 700;
@@ -110,7 +111,10 @@ border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 box-shadow: 0px 10px 15px 0 rgb(0 0 0 / 20%);
 }
-.cta-form-card h3{font-family: 'Amiri', serif;}
+.cta-form-card h3{
+    font-size: 26px;
+   /*  font-family: 'Amiri', serif; */
+}
 .welcome-apps {
 position: relative;
 width: 100%;
@@ -119,8 +123,8 @@ margin-top: -140px;
 z-index: 11;
 }
 .welcome-apps .app-card{
-background: #333333;
-background-image: linear-gradient(127deg, #0a0c07 0%, #495057 91%);
+background: #141714;
+/* background-image: linear-gradient(127deg, #0a0c07 0%, #495057 91%); */
 width: 100%;
 box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 padding-top: 30px;
@@ -704,7 +708,7 @@ width: 450px;
 height: 770px;
 margin: 0 auto;
 padding: 108px 70px;
-background: url(http://layerdrops.com/jironis/assets/img/feature/mockup.png);
+background: url(../../assets/img/mobile_frame.png);
 margin-top: 12px;
 }
 
@@ -719,8 +723,8 @@ border: 0!important;
 position: absolute;
 top: 25px;
 right: 25px;
-color: #808080!important;
-border: 2px solid #82c424;
+color: #000000!important;
+border: 2px solid #000000;
 padding: 5px 10px!important;
 border-radius: 20px;
 font-size: 20px!important;
@@ -732,12 +736,12 @@ opacity: 1!important;
 transition: transform 600ms;
 }
 .cta-form-card button.close:hover{
-background-color: #82c424;
+background-color: #000000;
 color: #fff!important;
 font-weight: 500!important;
 }
 button.close:hover {
-background: #3E465A;
+background: #000000;
 -webkit-transform: rotate(360deg) scale(1.10);
 -moz-transform: rotate(360deg) scale(1.10);
 -ms-transform: rotate(360deg) scale(1.10);
