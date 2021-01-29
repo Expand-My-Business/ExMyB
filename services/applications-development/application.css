@@ -438,7 +438,7 @@ font-size: 18px;
 line-height: 30px;
 letter-spacing: 1.75px;
 color: #3B566E;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 .about .about-text p {
 font-weight: 400;
@@ -654,7 +654,8 @@ font-weight: 600;
 margin: 0 0 10px;
 }
 .app_item h4 a, .portfolio-item-info h3 a, .work-card p {
-color: #050748;
+    color: #3b566e;
+    font-size: 20px;
 }
 .item-info p {
 font-size: 17px;
@@ -849,3 +850,14 @@ transition: transform 600ms;
         margin-top: 0;
     }
 }
+
+
+ /*--cover up mac , mac-book---*/
+
+ @media only screen and (min-width: 1024px) and (max-width: 1920px) {}
+
+ /*--mac book pro , and mac-book retina display screen---*/
+ 
+ @media only screen and (min-width: 1920px) and (max-width: 2560px) {
+     .cta-hero{height: 90vh;}
+ }
