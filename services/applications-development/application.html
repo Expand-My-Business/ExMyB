@@ -33,10 +33,6 @@
   <link href="../../assets/css/style.css" rel="stylesheet">
   <link href="application.css" rel="stylesheet">
 
-  
-
-
-
 </head>
 
 <body>
@@ -92,28 +88,37 @@
                         </div>
 
                         <!-- Email Address -->
-                        <div class="input-group col-lg-12 mb-4">
+                        <!-- <div class="input-group col-lg-12 mb-4">
                           <input style="padding: 10px!important;" id="ctaEmail" type="email" name="ctaEmail" placeholder="Email Address" class="form-control pp-form-input bg-white border-sm" required="">
-                        </div>
+                        </div> -->
     
                         <!-- Phone Number -->
                         <div class="input-group col-lg-12 mb-4">
                           <input style="padding: 10px!important;" id="ctaContact" type="number" name="ctaContact" placeholder="Phone Number" class="form-control pp-form-input bg-white border-sm" required="">
                         </div>
-    
-    
-                          <!-- Job -->
-                          <div class="input-group col-lg-12 mb-4">
-                            <select style="padding: 8px 10px!important;color: #000; font-weight: 500;" id="" name="" class="form-control pp-form-select custom-select bg-white  border-sm dropdown"   required="">
-                                <!-- <option value="" >Choose your service</option> -->
-                                <option value="">iOS App</option>
-                                <option value="" selected="">Android App</option>
-                                <option value="">Web App</option>
-                                <option value="">Hybrid-Native App</option>
-                            </select>
-                            
-                        </div>
-
+                         <!-- category -->
+                         <div class="input-group col-lg-12 mb-5">
+                          <select style="padding: 6px 10px!important;" id="" name="" class="form-control pp-form-select custom-select bg-white  border-sm dropdown" required="">
+                              <option value="" selected>Choose Category </option>
+                              <option value="On Demand App (App Development)">On Demand App</option>
+                              <option value="E-Commerce & Marketplace (App Development)">E-Commerce & Marketplace</option>
+                              <option value="Food & Beverage (App Development)">Food & Beverage</option>
+                              <option value="Pickup & Delivery (App Development)">Pickup & Delivery</option>
+                              <option value="Healthcare & Medical (App Development)">Healthcare & Medical</option>
+                              <option value="Trading App (App Development)">Trading App</option>
+                              <option value="Laundary & Home Service (App Development)">Laundary & Home Service</option>
+                              <option value="Real Estate (App Development)">Real Estate</option>
+                              <option value="Banking & Finance (App Development)">Banking & Finance</option>
+                              <option value="Education & Learning (App Development)">Education & Learning</option>
+                              <option value="Transportation (App Development)">Transportation</option>
+                              <option value="Game App (App Development)">Game App</option>
+                              <option value="Luxary Clothing (App Development)">Luxary Clothing</option>
+                              <option value="Skin Care (App Development)">Skin Care</option>
+                              <option value="IOT (App Development)">IOT</option>
+                              <option value="others (App Development)">Others</option>
+                          </select>
+                          
+                         </div>
                         <!-- Submit Button -->
                         <div class="form-group col-lg-12 mx-auto mb-0 text-center">
                             
@@ -413,11 +418,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/on_demand.jpg" alt="On Demand"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="On Demand App (App Development)" title="On Demand App">
+              <img src="../../assets/img/on_demand.jpg" alt="On Demand App (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">On Demand App</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="On Demand App (App Development)">On Demand App</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -425,11 +431,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Ecommerce_and_Marketplace.jpg" alt="Ecommerce & Marketplace"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="E-Commerce & Marketplace (App Development)" title="Ecommerce & Marketplace">
+              <img src="../../assets/img/Ecommerce_and_Marketplace.jpg" alt="E-Commerce & Marketplace (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Ecommerce & Marketplace</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="E-Commerce & Marketplace (App Development)">E-Commerce & Marketplace</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -437,11 +444,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item h-scl-">
           <div class="item-image h-scl-base">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Food_and_Beverage.jpg" alt="Food & Beverage"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Food & Beverage (App Development)"  title="Food & Beverage">
+              <img src="../../assets/img/Food_and_Beverage.jpg" alt="Food & Beverage (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Food & Beverage</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Food & Beverage (App Development)">Food & Beverage</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -449,11 +457,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Pickup_and_Delivery.jpg" alt="Pickup & Delivery"
+            <a href="#" data-toggle="modal" data-target="#exampleModal"  data-select="Pickup & Delivery (App Development)" title="Pickup & Delivery">
+              <img src="../../assets/img/Pickup_and_Delivery.jpg" alt="Pickup & Delivery (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Pickup & Delivery</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal"  data-select="Pickup & Delivery (App Development)">Pickup & Delivery</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -461,11 +470,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Healthcare_and_Medical.jpg" alt="Healthcare & Medical"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Healthcare & Medical (App Development)" title="Healthcare & Medical">
+              <img src="../../assets/img/Healthcare_and_Medical.jpg" alt="Healthcare & Medical (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Healthcare & Medical</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Healthcare & Medical (App Development)">Healthcare & Medical</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -473,11 +483,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Trading.jpg" alt="Trading"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Trading App (App Development)" title="Trading">
+              <img src="../../assets/img/Trading.jpg" alt="Trading App (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Trading</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Trading App (App Development)">Trading</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -486,11 +497,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Laundary.jpg" alt="Laundary"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Laundary & Home Service (App Development)" title="Laundary & Home Service">
+              <img src="../../assets/img/Laundary.jpg" alt="Laundary & Home Service (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Laundary & Home Service</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Laundary & Home Service (App Development)">Laundary & Home Service</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -498,11 +510,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/real_estate.jpg" alt="Real Estate"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Real Estate (App Development)" class="Real Estate">
+              <img src="../../assets/img/real_estate.jpg" alt="Real Estate (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Real Estate</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Real Estate (App Development)">Real Estate</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -510,11 +523,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item h-scl-">
           <div class="item-image h-scl-base">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Banking_and_Finance.jpg" alt="Banking & Finance"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Banking & Finance (App Development)"  title="Banking & Finance">
+              <img src="../../assets/img/Banking_and_Finance.jpg" alt="Banking & Finance (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Banking & Finance</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Banking & Finance (App Development)">Banking & Finance</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -522,11 +536,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Education_and_learning.jpg" alt="Education & Learning"
+            <a href="#" data-toggle="modal" data-target="#exampleModal"  data-select="Education & Learning (App Development)" title="Education & Learning">
+              <img src="../../assets/img/Education_and_learning.jpg" alt="Education & Learning (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Education & Learning</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal"  data-select="Education & Learning (App Development)">Education & Learning</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -534,11 +549,12 @@
       <div class="col-lg-4 col-sm-6 single-card-item">
         <div class="app_item ">
           <div class="item-image">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/transportation.jpg" alt="Transportation"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Transportation (App Development)" title="Transportation">
+              <img src="../../assets/img/transportation.jpg" alt="Transportation (App Development)"
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Transportation</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Transportation (App Development)">Transportation</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -546,11 +562,51 @@
       <div class="col-lg-4 col-sm-6 single-card-item ">
         <div class="app_item ">
           <div class="item-image ">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="../../assets/img/Game.jpg" alt="Game"
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Game App (App Development)"   title="Game">
+              <img src="../../assets/img/Game.jpg" alt="Game App (App Development)" 
                 class="img-fluid"> </a>
           </div>
           <div class="item-info">
-            <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Game</a></h4>
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Game App (App Development)" >Game</a></h4>
+            <!-- <p>ios, android, hybrid, web App</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 single-card-item ">
+        <div class="app_item h-scl-">
+          <div class="item-image h-scl-base">
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Luxary Clothing (App Development)" title="Luxary Clothing">
+              <img src="../../assets/img/luxary_clothing.jpg" alt="Luxary Clothing (App Development)"
+                class="img-fluid"> </a>
+          </div>
+          <div class="item-info">
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Luxary Clothing (App Development)">Luxary Clothing</a></h4>
+            <!-- <p>ios, android, hybrid, web App</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 single-card-item ">
+        <div class="app_item ">
+          <div class="item-image ">
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Skin Care (App Development)" title="Skin Care">
+              <img src="../../assets/img/skincare.jpg" alt="Skin Care (App Development)"
+                class="img-fluid"> </a>
+          </div>
+          <div class="item-info">
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="Skin Care (App Development)">Skin Care</a></h4>
+            <!-- <p>ios, android, hybrid, web App</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 single-card-item">
+        <div class="app_item ">
+          <div class="item-image">
+            <a href="#" data-toggle="modal" data-target="#exampleModal" data-select="IOT (App Development)" title="IOT">
+              <img src="../../assets/img/iot.jpg" alt="IOT (App Development)"
+                class="img-fluid"> </a>
+          </div>
+          <div class="item-info">
+            <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-select="IOT (App Development)">IOT</a></h4>
             <!-- <p>ios, android, hybrid, web App</p> -->
           </div>
         </div>
@@ -957,7 +1013,7 @@ We focus on soft IT professional services that include services like, digital ma
 <!--App Carousel section-->
 
 <!-- CTA Button section -->
-<section class="cta-common-section ptb">
+<section class="cta-common-section pt-0">
   <div class="container">
     <div class="common-heading-section text-center">
        <h4 class="py-4">Take Your Business to Next Level With Our Mobile App Development Solutions</h4>
@@ -1077,9 +1133,9 @@ We focus on soft IT professional services that include services like, digital ma
                         </div>
 
                         <!-- Email Address -->
-                        <div class="input-group col-lg-12 mb-4">
+                        <!-- <div class="input-group col-lg-12 mb-4">
                           <input style="padding: 10px!important;" id="ctaEmail" type="email" name="ctaEmail" placeholder="Email Address" class="form-control pp-form-input bg-white border-sm" required="">
-                        </div>
+                        </div> -->
     
                         <!-- Phone Number -->
                         <div class="input-group col-lg-12 mb-4">
@@ -1087,17 +1143,28 @@ We focus on soft IT professional services that include services like, digital ma
                         </div>
     
     
-                          <!-- Job -->
-                          <div class="input-group col-lg-12 mb-5">
-                            <select style="padding: 8px 10px!important;" id="" name="" class="form-control pp-form-select custom-select bg-white  border-sm dropdown" required="">
-                                <option value="" selected="">Choose your service</option>
-                                <option value="">IOS App</option>
-                                <option value="">Android App</option>
-                                <option value="">Web App</option>
-                                <option value="">Hybrid-Native App</option>
-                            </select>
-                            
-                        </div>
+                           <!-- category -->
+                         <div class="input-group col-lg-12 mb-5">
+                          <select style="padding: 6px 10px!important;" id="exmyb" name="" class="form-control pp-form-select custom-select bg-white  border-sm dropdown" required="">
+                              <option value="On Demand App (App Development)">On Demand App</option>
+                              <option value="E-Commerce & Marketplace (App Development)">E-Commerce & Marketplace</option>
+                              <option value="Food & Beverage (App Development)">Food & Beverage</option>
+                              <option value="Pickup & Delivery (App Development)">Pickup & Delivery</option>
+                              <option value="Healthcare & Medical (App Development)">Healthcare & Medical</option>
+                              <option value="Trading App (App Development)">Trading App</option>
+                              <option value="Laundary & Home Service (App Development)">Laundary & Home Service</option>
+                              <option value="Real Estate (App Development)">Real Estate</option>
+                              <option value="Banking & Finance (App Development)">Banking & Finance</option>
+                              <option value="Education & Learning (App Development)">Education & Learning</option>
+                              <option value="Transportation (App Development)">Transportation</option>
+                              <option value="Game App (App Development)">Game App</option>
+                              <option value="Luxary Clothing (App Development)">Luxary Clothing</option>
+                              <option value="Skin Care (App Development)">Skin Care</option>
+                              <option value="IOT (App Development)">IOT</option>
+                              <option value="others (App Development)">Others</option>
+                          </select>
+                          
+                         </div>
 
                         <!-- Submit Button -->
                         <div class="form-group col-lg-12 mx-auto mb-0 text-center">
@@ -1212,6 +1279,43 @@ We focus on soft IT professional services that include services like, digital ma
 
   <script>
       $(document).ready(function() {
+
+        // get value when click on portfolio
+        /* $('.item-image a').click(function() {
+           var img_value = $(this).closest('.item-image a').children('img').attr("alt");
+          
+            console.log(img_value);
+
+            $("select#exmyb option").each(function(){
+              if ($(this).val() == img_value)
+                $(this).attr("selected","selected");
+               
+            });
+
+         }); */
+
+         $('.item-image a,.item-info a').click(function() {
+           var click_value = $(this).data("select");
+          
+            console.log(click_value);
+            $('select#exmyb option:selected').removeAttr('selected');
+            $("select#exmyb option").each(function(){
+              if ($(this).val() == click_value)
+                
+                $(this).attr("selected","selected");
+               
+            });
+
+         });
+
+        /*  $('.item-info a').click(function() {
+           var text_val = $(this).text();
+            console.log(text_val);
+            $("select#exmyb option").each(function(){
+              if ($(this).val() == text_val)
+                $(this).attr("selected","selected");
+            });
+         }); */
 
        /*  $(".owl-carousel").owlCarousel(); */
         
