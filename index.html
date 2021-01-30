@@ -592,10 +592,37 @@
 
   </footer>
 
-<a href="https://api.whatsapp.com/send?phone=918882102246" class="wa-float wa-hide" target="_blank" id="wa-id" data-aos="fade-up" data-aos-delay="500">
-  <i class="fab fa-whatsapp whatsaap-float"></i>
-</a>  
+<div class="">
+  <a class="wa-float wa-hide" href="https://api.whatsapp.com/send?phone=918882102246"  target="_blank" id="wa-id" data-aos="fade-up" data-aos-delay="500">
+    <i class="fab fa-whatsapp whatsaap-float pulse-button"></i>
+  </a> 
+</div> 
 
+<style>
+
+.pulse-button {
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  color: #f5f6fd;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 0 #2cce65;
+  background-color: #2cce65;
+  cursor: pointer;
+  animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse-button:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+</style>
 
   <!--  JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

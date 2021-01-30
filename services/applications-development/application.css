@@ -399,6 +399,24 @@ z-index: 2;
 background-image: linear-gradient(127deg, #e9ecef 0%, #333 91%);
 opacity: 1;
 } */
+img.imgfix_src_img {
+    left: -999999px;
+    right: -999999px;
+    top: -999999px;
+    bottom: -999999px;
+    z-index: 0;
+    width: 666px;
+    height: 430px;
+    max-width: auto !important;
+    min-width: auto !important;
+    position: absolute;
+    margin: auto;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 #imgfix_wrapper_layer_0_0 .imgfix_src_img {
 left: -999999px;
 right: -999999px;

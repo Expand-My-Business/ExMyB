@@ -2484,7 +2484,13 @@ outline: 0;
 .whatsaap-float{
 	margin-top:16px;
 }
-.wa-float:hover{background-color: #fff;color: #25d366;border: 1px solid;}
+.wa-float:hover a{
+  transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+}
+/* .wa-float:hover{background-color: #fff;color: #25d366;border: 1px solid;} */
 
 .wa-hide {
   opacity:0;
